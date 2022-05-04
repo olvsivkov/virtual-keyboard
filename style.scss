@@ -1,0 +1,83 @@
+$border: 1px solid rgb(0, 0, 0);
+$font-family: 'Times New Roman',
+Times,
+serif;
+@mixin gridRow($position, $grid) {
+    text-align: $position;
+    display: $grid;
+}
+
+.keyboard-wrapper {
+    max-width: 800px;
+    width: 100%;
+    max-height: 500px;
+    height: 500px;
+    border: $border;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 10% 30% 50% 10%;
+    font-size: 13px;
+    font-family: $font-family;
+    .title {
+        border: $border;
+    }
+    .screen {
+        border: $border;
+        .userScreen {
+            width: 99%;
+            height: 96%;
+            font-size: 25px;
+            text-align: right;
+            direction: ltr;
+        }
+    }
+    .keyboard {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        border: $border;
+        .row1 {
+            @include gridRow(center, grid);
+            grid-template-columns: repeat(13, 1fr) 2fr;
+            border: $border;
+            .border {
+                border: $border;
+            }
+        }
+        .row2 {
+            @include gridRow(center, grid);
+            grid-template-columns: repeat(15, 1fr);
+            border: $border;
+            .border {
+                border: $border;
+            }
+        }
+        .row3 {
+            @include gridRow(center, grid);
+            grid-template-columns: 2fr repeat(11, 1fr) 2fr;
+            border: $border;
+            .border {
+                border: $border;
+            }
+        }
+        .row4 {
+            @include gridRow(center, grid);
+            grid-template-columns: 2fr repeat(11, 1fr) 2fr;
+            border: $border;
+            .border {
+                border: $border;
+            }
+        }
+        .row5 {
+            @include gridRow(center, grid);
+            grid-template-columns: repeat(3, 1fr) 7fr repeat(5, 1fr);
+            font-family: 'Times New Roman', Times, serif;
+            .border {
+                border: $border;
+            }
+        }
+    }
+}
+
+.animation {
+    background-color: rgb(238, 9, 9);
+}
