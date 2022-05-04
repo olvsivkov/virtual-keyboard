@@ -1,0 +1,93 @@
+.keyboard-wrapper {
+  max-width: 800px;
+  width: 100%;
+  max-height: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 10% 30% 50% 10%;
+  font-size: 13px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.keyboard-wrapper .title {
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .screen {
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .screen .userScreen {
+  width: 99%;
+  height: 96%;
+  font-size: 25px;
+  text-align: right;
+  direction: ltr;
+}
+
+.keyboard-wrapper .keyboard {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row1 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr) 2fr;
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row1 .border {
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row2 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row2 .border {
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row3 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr repeat(11, 1fr) 2fr;
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row3 .border {
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row4 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr repeat(11, 1fr) 2fr;
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row4 .border {
+  border: 1px solid black;
+}
+
+.keyboard-wrapper .keyboard .row5 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 7fr repeat(5, 1fr);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.keyboard-wrapper .keyboard .row5 .border {
+  border: 1px solid black;
+}
+
+.animation {
+  background-color: #ee0909;
+}
