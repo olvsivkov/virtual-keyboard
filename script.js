@@ -189,7 +189,7 @@ document.body.insertAdjacentHTML("afterbegin",
                 <p class="letter">Alt</p>
             </div>
             <div class="border">
-                <p class="letter">Space</p>
+                <p class="letter cursor-touch">   </p>
             </div>
             <div class="border">
                 <p class="letter">Alt</p>
@@ -217,6 +217,8 @@ const letter = document.querySelectorAll(".letter")
 const cursorTouch = document.querySelectorAll(".cursor-touch")
 const keyboard = document.querySelector(".keyboard")
 
+
+
 // вывод текста на экран с клавиатуры + подсветка клавиш.
 function handler(event) {
     if ([].includes(event.key)) {
@@ -237,8 +239,10 @@ userScreen.addEventListener('keydown', handler);
 
 // вывод текста на экран с виртуальной клавиатуры.
 
+
 function clickOnKeyboard(event) {
     let target = event.target;
+
     words += target.innerHTML
     for (let i = 0; i < cursorTouch.length; i++) {
         if (target.innerHTML === cursorTouch[i].innerHTML) {
@@ -247,6 +251,7 @@ function clickOnKeyboard(event) {
             setTimeout(() => { cursorTouch[i].parentNode.classList.remove('animation') }, 100);
         }
     }
+
 }
 
 keyboard.addEventListener("click", clickOnKeyboard);
