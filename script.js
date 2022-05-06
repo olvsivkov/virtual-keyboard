@@ -7,43 +7,43 @@ document.body.insertAdjacentHTML("afterbegin",
     <div class="keyboard border">
         <div class="row1 border">
             <div class="border">
-                <p class="letter">\`</p>
+                <p class="letter cursor-touch">\`</p>
             </div>
             <div class="border">
-                <p class="letter">1</p>
+                <p class="letter cursor-touch">1</p>
             </div>
             <div class="border">
-                <p class="letter">2</p>
+                <p class="letter cursor-touch">2</p>
             </div>
             <div class="border">
-                <p class="letter">3</p>
+                <p class="letter cursor-touch">3</p>
             </div>
             <div class="border">
-                <p class="letter">4</p>
+                <p class="letter cursor-touch">4</p>
             </div>
             <div class="border">
-                <p class="letter">5</p>
+                <p class="letter cursor-touch">5</p>
             </div>
             <div class="border">
-                <p class="letter">6</p>
+                <p class="letter cursor-touch">6</p>
             </div>
             <div class="border">
-                <p class="letter">7</p>
+                <p class="letter cursor-touch">7</p>
             </div>
             <div class="border">
-                <p class="letter">8</p>
+                <p class="letter cursor-touch">8</p>
             </div>
             <div class="border">
-                <p class="letter">9</p>
+                <p class="letter cursor-touch">9</p>
             </div>
             <div class="border">
-                <p class="letter">0</p>
+                <p class="letter cursor-touch">0</p>
             </div>
             <div class="border">
-                <p class="letter">-</p>
+                <p class="letter cursor-touch">-</p>
             </div>
             <div class="border">
-                <p class="letter">=</p>
+                <p class="letter cursor-touch">=</p>
             </div>
             <div class="border">
                 <p class="letter">Backspace</p>
@@ -54,43 +54,43 @@ document.body.insertAdjacentHTML("afterbegin",
                 <p class="letter">Tab</p>
             </div>
             <div class="border">
-                <p class="letter">q</p>
+                <p class="letter cursor-touch">q</p>
             </div>
             <div class="border">
-                <p class="letter">w</p>
+                <p class="letter cursor-touch">w</p>
             </div>
             <div class="border">
-                <p class="letter">e</p>
+                <p class="letter cursor-touch">e</p>
             </div>
             <div class="border">
-                <p class="letter">r</p>
+                <p class="letter cursor-touch">r</p>
             </div>
             <div class="border">
-                <p class="letter">t</p>
+                <p class="letter cursor-touch">t</p>
             </div>
             <div class="border">
-                <p class="letter">y</p>
+                <p class="letter cursor-touch">y</p>
             </div>
             <div class="border">
-                <p class="letter">u</p>
+                <p class="letter cursor-touch">u</p>
             </div>
             <div class="border">
-                <p class="letter">i</p>
+                <p class="letter cursor-touch">i</p>
             </div>
             <div class="border">
-                <p class="letter">o</p>
+                <p class="letter cursor-touch">o</p>
             </div>
             <div class="border">
-                <p class="letter">p</p>
+                <p class="letter cursor-touch">p</p>
             </div>
             <div class="border">
-                <p class="letter">[</p>
+                <p class="letter cursor-touch">[</p>
             </div>
             <div class="border">
-                <p class="letter">]</p>
+                <p class="letter cursor-touch">]</p>
             </div>
             <div class="border">
-                <p class="letter">\\</p>
+                <p class="letter cursor-touch">\\</p>
             </div>
             <div class="border">
                 <p class="letter">Del</p>
@@ -101,37 +101,37 @@ document.body.insertAdjacentHTML("afterbegin",
                 <p class="letter">CapsLock</p>
             </div>
             <div class="border">
-                <p class="letter">a</p>
+                <p class="letter cursor-touch">a</p>
             </div>
             <div class="border">
-                <p class="letter">s</p>
+                <p class="letter cursor-touch">s</p>
             </div>
             <div class="border">
-                <p class="letter">d</p>
+                <p class="letter cursor-touch">d</p>
             </div>
             <div class="border">
-                <p class="letter">f</p>
+                <p class="letter cursor-touch">f</p>
             </div>
             <div class="border">
-                <p class="letter">g</p>
+                <p class="letter cursor-touch">g</p>
             </div>
             <div class="border">
-                <p class="letter">h</p>
+                <p class="letter cursor-touch">h</p>
             </div>
             <div class="border">
-                <p class="letter">j</p>
+                <p class="letter cursor-touch">j</p>
             </div>
             <div class="border">
-                <p class="letter">k</p>
+                <p class="letter cursor-touch">k</p>
             </div>
             <div class="border">
-                <p class="letter">l</p>
+                <p class="letter cursor-touch">l</p>
             </div>
             <div class="border">
-                <p class="letter">;</p>
+                <p class="letter cursor-touch">;</p>
             </div>
             <div class="border">
-                <p class="letter">'</p>
+                <p class="letter cursor-touch">'</p>
             </div>
             <div class="border">
                 <p class="letter">Enter</p>
@@ -142,34 +142,34 @@ document.body.insertAdjacentHTML("afterbegin",
                 <p class="letter">Shift</p>
             </div>
             <div class="border">
-                <p class="letter">z</p>
+                <p class="letter cursor-touch">z</p>
             </div>
             <div class="border">
-                <p class="letter">x</p>
+                <p class="letter cursor-touch">x</p>
             </div>
             <div class="border">
-                <p class="letter">c</p>
+                <p class="letter cursor-touch">c</p>
             </div>
             <div class="border">
-                <p class="letter">v</p>
+                <p class="letter cursor-touch">v</p>
             </div>
             <div class="border">
-                <p class="letter">b</p>
+                <p class="letter cursor-touch">b</p>
             </div>
             <div class="border">
-                <p class="letter">n</p>
+                <p class="letter cursor-touch">n</p>
             </div>
             <div class="border">
-                <p class="letter">m</p>
+                <p class="letter cursor-touch">m</p>
             </div>
             <div class="border">
-                <p class="letter">,</p>
+                <p class="letter cursor-touch">,</p>
             </div>
             <div class="border">
-                <p class="letter">.</p>
+                <p class="letter cursor-touch">.</p>
             </div>
             <div class="border">
-                <p class="letter">//</p>
+                <p class="letter cursor-touch">/</p>
             </div>
             <div class="border">
                 <p class="letter">&#9650</p>
@@ -211,29 +211,42 @@ document.body.insertAdjacentHTML("afterbegin",
     <div class="comments border"></div>
   </div>`);
 
-// ввод с клавиатуры
-let expression = ""
+let words = ""
 const userScreen = document.querySelector(".userScreen");
 const letter = document.querySelectorAll(".letter")
+const cursorTouch = document.querySelectorAll(".cursor-touch")
+const keyboard = document.querySelector(".keyboard")
 
+// вывод текста на экран с клавиатуры + подсветка клавиш.
 function handler(event) {
-    expression = event.key
     if ([].includes(event.key)) {
         event.preventDefault();
     }
 
     function lookLetter() {
         for (let i = 0; i < letter.length; i += 1) {
-            if (expression === letter[i].innerHTML) {
-                letter[i].classList.add('animation')
-                setTimeout(() => { letter[i].classList.remove('animation') }, 100);
-
-                console.log(expression)
-                console.log(letter[i])
+            if (event.key === letter[i].innerHTML) {
+                letter[i].parentNode.classList.add('animation')
+                setTimeout(() => { letter[i].parentNode.classList.remove('animation') }, 100);
             }
         }
     }
     lookLetter()
-
 }
 userScreen.addEventListener('keydown', handler);
+
+// вывод текста на экран с виртуальной клавиатуры.
+
+function clickOnKeyboard(event) {
+    let target = event.target;
+    words += target.innerHTML
+    for (let i = 0; i < cursorTouch.length; i++) {
+        if (target.innerHTML === cursorTouch[i].innerHTML) {
+            userScreen.value = words
+            cursorTouch[i].parentNode.classList.add('animation')
+            setTimeout(() => { cursorTouch[i].parentNode.classList.remove('animation') }, 100);
+        }
+    }
+}
+
+keyboard.addEventListener("click", clickOnKeyboard);

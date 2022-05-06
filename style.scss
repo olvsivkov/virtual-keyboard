@@ -35,6 +35,7 @@ serif;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         border: $border;
+        cursor: pointer;
         .row1 {
             @include gridRow(center, grid);
             grid-template-columns: repeat(13, 1fr) 2fr;
