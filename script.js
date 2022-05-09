@@ -2,7 +2,7 @@
 document.body.insertAdjacentHTML("afterbegin",
     `<div class="keyboard_wrapper">
     <div class="display-wrapper">
-        <textarea class="display" type="text" autofocus></textarea>
+        <textarea id="myAnchor" class="display" type="text" autofocus></textarea>
     </div>
     <div class="key">
         <div class="row">
@@ -82,6 +82,12 @@ document.body.insertAdjacentHTML("afterbegin",
             <span>&#9654</span>
         </div>
     </div>
+    <div> 
+        <ul>Сделано на windows. Не реализовано:
+            <li> Переключение языка клавиатуры </li>
+            <li> По событию Click не работают стрелки, alt и shift </li>
+        </ul>
+    </div>
 </div> `);
 
 
@@ -92,8 +98,8 @@ const keys = document.querySelectorAll('.keyboard_wrapper .key .row span'),
     space = document.querySelector(".space"),
     backspace = document.querySelector(".backspace"),
     esc = document.querySelector(".esc"),
-    enter = document.querySelector(".enter")
-
+    enter = document.querySelector(".enter"),
+    tab = document.querySelector(".tab")
 
 let capsLockMode = false;
 keys.forEach(key => {
@@ -110,6 +116,8 @@ keys.forEach(key => {
             display.value = ''
         } else if (key.classList.contains("enter")) {
             display.value += '\r\n'
+        } else if (key.classList.contains("tab")) {
+            display.value += '        '
         } else {
             if (capsLockMode) {
                 display.value += key.dataset.key.toUpperCase();
@@ -119,9 +127,11 @@ keys.forEach(key => {
         }
     });
 
+
+
 });
 
-// вывод текста на экран с клавиатуры + подсветка клавиш.
+// "can try to fix coursor on textarea"
 
 
 
@@ -139,6 +149,9 @@ function handler(event) {
     } else if (event.key === ' ') {
         space.classList.add('active')
         setTimeout(() => { space.classList.remove('active') }, 200);
+    } else if (event.keyCode == 9) {
+        display.value += '        ';
+
     } else {
         if (capsLockMode) {
             display.innerText += keyPress.toUpperCase();
@@ -146,6 +159,8 @@ function handler(event) {
             display.innerText += keyPress.toLowerCase();
         }
     }
+
+
 
     function lookLetter() {
         for (let i = 0; i < letter.length; i += 1) {
@@ -156,5 +171,7 @@ function handler(event) {
         }
     }
     lookLetter()
+
+
 }
 document.addEventListener('keydown', handler);
