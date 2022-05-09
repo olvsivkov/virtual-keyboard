@@ -37,8 +37,7 @@ body {
                 background-color: rgb(238, 236, 236);
                 white-space: pre-wrap;
                 box-shadow: inset 2px 2px 5px #0002, inset -2px -2px 5px #fff;
-            }
-            input {
+                resize: none;
                 outline: none;
             }
             .display::before {
@@ -73,6 +72,9 @@ body {
                     transition: 0.3s;
                     background-color: #fff;
                 }
+                .enter {
+                    width: calc(50px * 2);
+                }
                 span.caps,
                 span.backspace {
                     width: calc(50px * 2);
@@ -81,7 +83,7 @@ body {
                     align-items: center;
                 }
                 span.space {
-                    width: calc(50px * 9.4);
+                    width: calc(50px * 9.8);
                 }
                 span.active,
                 span:hover {
