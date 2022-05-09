@@ -92,7 +92,8 @@ const keys = document.querySelectorAll('.keyboard_wrapper .key .row span'),
     space = document.querySelector(".space"),
     backspace = document.querySelector(".backspace"),
     esc = document.querySelector(".esc"),
-    enter = document.querySelector(".enter")
+    enter = document.querySelector(".enter"),
+    tab = document.querySelector(".tab")
 
 
 let capsLockMode = false;
@@ -110,6 +111,8 @@ keys.forEach(key => {
             display.value = ''
         } else if (key.classList.contains("enter")) {
             display.value += '\r\n'
+        } else if (key.classList.contains("tab")) {
+            display.value += '        '
         } else {
             if (capsLockMode) {
                 display.value += key.dataset.key.toUpperCase();
@@ -139,6 +142,8 @@ function handler(event) {
     } else if (event.key === ' ') {
         space.classList.add('active')
         setTimeout(() => { space.classList.remove('active') }, 200);
+    } else if (event.keyCode == 9) {
+        display.value += '        ';
     } else {
         if (capsLockMode) {
             display.innerText += keyPress.toUpperCase();
