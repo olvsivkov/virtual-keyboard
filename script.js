@@ -1,239 +1,145 @@
+//<pre class="display"></pre>
 document.body.insertAdjacentHTML("afterbegin",
-    `<div class="keyboard-wrapper">
-    <div class="title-border"></div>
-    <div class="screen border">
-        <input class="userScreen" type="text" autofocus>
+    `<div class="keyboard_wrapper">
+    <div class="display-wrapper">
+        <input class="display" type="text" autofocus>
     </div>
-    <div class="keyboard border">
-        <div class="row1 border">
-            <div class="border">
-                <p class="letter">\`</p>
-            </div>
-            <div class="border">
-                <p class="letter">1</p>
-            </div>
-            <div class="border">
-                <p class="letter">2</p>
-            </div>
-            <div class="border">
-                <p class="letter">3</p>
-            </div>
-            <div class="border">
-                <p class="letter">4</p>
-            </div>
-            <div class="border">
-                <p class="letter">5</p>
-            </div>
-            <div class="border">
-                <p class="letter">6</p>
-            </div>
-            <div class="border">
-                <p class="letter">7</p>
-            </div>
-            <div class="border">
-                <p class="letter">8</p>
-            </div>
-            <div class="border">
-                <p class="letter">9</p>
-            </div>
-            <div class="border">
-                <p class="letter">0</p>
-            </div>
-            <div class="border">
-                <p class="letter">-</p>
-            </div>
-            <div class="border">
-                <p class="letter">=</p>
-            </div>
-            <div class="border">
-                <p class="letter">Backspace</p>
-            </div>
+    <div class="key">
+        <div class="row">
+            <span class="esc">
+                Esc
+            </span>
+            <span data-key="1">1</span>
+            <span data-key="2">2</span>
+            <span data-key="3">3</span>
+            <span data-key="4">4</span>
+            <span data-key="5">5</span>
+            <span data-key="6">6</span>
+            <span data-key="7">7</span>
+            <span data-key="8">8</span>
+            <span data-key="9">9</span>
+            <span data-key="0">0</span>
+            <span data-key="-">-</span>
+            <span data-key="=">=</span>
+            <span class="backspace">
+                Backspace
+            </span>
         </div>
-        <div class="row2 border">
-            <div class="border">
-                <p class="letter">Tab</p>
-            </div>
-            <div class="border">
-                <p class="letter">q</p>
-            </div>
-            <div class="border">
-                <p class="letter">w</p>
-            </div>
-            <div class="border">
-                <p class="letter">e</p>
-            </div>
-            <div class="border">
-                <p class="letter">r</p>
-            </div>
-            <div class="border">
-                <p class="letter">t</p>
-            </div>
-            <div class="border">
-                <p class="letter">y</p>
-            </div>
-            <div class="border">
-                <p class="letter">u</p>
-            </div>
-            <div class="border">
-                <p class="letter">i</p>
-            </div>
-            <div class="border">
-                <p class="letter">o</p>
-            </div>
-            <div class="border">
-                <p class="letter">p</p>
-            </div>
-            <div class="border">
-                <p class="letter">[</p>
-            </div>
-            <div class="border">
-                <p class="letter">]</p>
-            </div>
-            <div class="border">
-                <p class="letter">\\</p>
-            </div>
-            <div class="border">
-                <p class="letter">Del</p>
-            </div>
+        <div class="row">
+            <span class="tab">Tab</span>
+            <span data-key="q">q</span>
+            <span data-key="w">w</span>
+            <span data-key="e">e</span>
+            <span data-key="r">r</span>
+            <span data-key="t">t</span>
+            <span data-key="y">y</span>
+            <span data-key="u">u</span>
+            <span data-key="i">i</span>
+            <span data-key="o">o</span>
+            <span data-key="p">p</span>
+            <span data-key="[">[</span>
+            <span data-key="]">]</span>
+            
         </div>
-        <div class="row3 border">
-            <div class="border">
-                <p class="letter">CapsLock</p>
-            </div>
-            <div class="border">
-                <p class="letter">a</p>
-            </div>
-            <div class="border">
-                <p class="letter">s</p>
-            </div>
-            <div class="border">
-                <p class="letter">d</p>
-            </div>
-            <div class="border">
-                <p class="letter">f</p>
-            </div>
-            <div class="border">
-                <p class="letter">g</p>
-            </div>
-            <div class="border">
-                <p class="letter">h</p>
-            </div>
-            <div class="border">
-                <p class="letter">j</p>
-            </div>
-            <div class="border">
-                <p class="letter">k</p>
-            </div>
-            <div class="border">
-                <p class="letter">l</p>
-            </div>
-            <div class="border">
-                <p class="letter">;</p>
-            </div>
-            <div class="border">
-                <p class="letter">'</p>
-            </div>
-            <div class="border">
-                <p class="letter">Enter</p>
-            </div>
+        <div class="row">
+            <span class="caps">caps</span>
+            <span data-key="a">a</span>
+            <span data-key="s">s</span>
+            <span data-key="d">d</span>
+            <span data-key="f">f</span>
+            <span data-key="g">g</span>
+            <span data-key="h">h</span>
+            <span data-key="j">j</span>
+            <span data-key="k">k</span>
+            <span data-key="l">l</span>
+            <span data-key=";">;</span>
+            <span data-key="'">'</span>
         </div>
-        <div class="row4 border">
-            <div class="border">
-                <p class="letter">Shift</p>
-            </div>
-            <div class="border">
-                <p class="letter">z</p>
-            </div>
-            <div class="border">
-                <p class="letter">x</p>
-            </div>
-            <div class="border">
-                <p class="letter">c</p>
-            </div>
-            <div class="border">
-                <p class="letter">v</p>
-            </div>
-            <div class="border">
-                <p class="letter">b</p>
-            </div>
-            <div class="border">
-                <p class="letter">n</p>
-            </div>
-            <div class="border">
-                <p class="letter">m</p>
-            </div>
-            <div class="border">
-                <p class="letter">,</p>
-            </div>
-            <div class="border">
-                <p class="letter">.</p>
-            </div>
-            <div class="border">
-                <p class="letter">//</p>
-            </div>
-            <div class="border">
-                <p class="letter">&#9650</p>
-            </div>
-            <div class="border">
-                <p class="letter">Shift</p>
-            </div>
+        <div class="row">
+            <span class="shift">Shift</span>
+            <span data-key="z">z</span>
+            <span data-key="x">x</span>
+            <span data-key="c">c</span>
+            <span data-key="v">v</span>
+            <span data-key="b">b</span>
+            <span data-key="n">n</span>
+            <span data-key="m">m</span>
+            <span data-key=",">,</span>
+            <span data-key=".">.</span>
+            <span data-key="/">/</span>
+            <span>&#9650</span>
+            
         </div>
-        <div class="row5 border">
-            <div class="border">
-                <p class="letter">Ctrl</p>
-            </div>
-            <div class="border">
-                <p class="letter">Win</p>
-            </div>
-            <div class="border">
-                <p class="letter">Alt</p>
-            </div>
-            <div class="border">
-                <p class="letter">Space</p>
-            </div>
-            <div class="border">
-                <p class="letter">Alt</p>
-            </div>
-            <div class="border">
-                <p class="letter">&#9664</p>
-            </div>
-            <div class="border">
-                <p class="letter">&#9660</p>
-            </div>
-            <div class="border">
-                <p class="letter">&#9654</p>
-            </div>
-            <div class="border">
-                <p class="letter">Ctrl</p>
-            </div>
+        <div class="row">
+            <span class="ctrl">Ctlr</span>
+            <span class="alt">Alt</span>
+            <span class="space" data-key=" ">
+                Space
+            </span>
+            <span>&#9664</span>
+            <span>&#9660</span>
+            <span>&#9654</span>
         </div>
     </div>
-    <div class="comments border"></div>
-  </div>`);
+</div> `);
 
-// ввод с клавиатуры
-let expression = ""
-const userScreen = document.querySelector(".userScreen");
-const letter = document.querySelectorAll(".letter")
+
+const keys = document.querySelectorAll('.keyboard_wrapper .key .row span'),
+    keyPad = document.querySelector('.keyboard_wrapper .key'),
+    display = document.querySelector('.display'),
+    letter = document.querySelectorAll("span"),
+    space = document.querySelector(".space")
+
+let capsLockMode = false;
+keys.forEach(key => {
+    key.addEventListener('click', function() {
+        if (key.classList.contains('caps')) {
+            key.classList.toggle('active');
+            keyPad.classList.toggle('uppercase');
+            if (capsLockMode) capsLockMode = false
+            else capsLockMode = true
+        } else if (key.classList.contains('backspace')) {
+            let str = display.value;
+            display.value = str.substring(0, (str.length - 1));
+        } else {
+            if (capsLockMode) {
+                display.value += key.dataset.key.toUpperCase();
+            } else {
+                display.value += key.dataset.key.toLowerCase();
+            }
+        }
+    });
+
+});
+
+// вывод текста на экран с клавиатуры + подсветка клавиш.
+
+
 
 function handler(event) {
-    expression = event.key
-    if ([].includes(event.key)) {
-        event.preventDefault();
+    let keyPress = event.key
+    if (event.keyCode == 8) {
+        let str = display.innerText;
+        display.innerText = str.substring(0, (str.length - 1));
+    } else if (event.key === ' ' || event.key === 'Spacebar') {
+        space.classList.add('active')
+        setTimeout(() => { space.classList.remove('active') }, 200);
+    } else {
+        if (capsLockMode) {
+            display.innerText += keyPress.toUpperCase();
+        } else {
+            display.innerText += keyPress.toLowerCase();
+        }
     }
 
     function lookLetter() {
         for (let i = 0; i < letter.length; i += 1) {
-            if (expression === letter[i].innerHTML) {
-                letter[i].classList.add('animation')
-                setTimeout(() => { letter[i].classList.remove('animation') }, 100);
-
-                console.log(expression)
-                console.log(letter[i])
+            if (keyPress === letter[i].innerHTML) {
+                letter[i].classList.add('active')
+                setTimeout(() => { letter[i].classList.remove('active') }, 200);
             }
         }
     }
     lookLetter()
-
 }
-userScreen.addEventListener('keydown', handler);
+document.addEventListener('keydown', handler);

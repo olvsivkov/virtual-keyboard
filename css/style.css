@@ -1,93 +1,115 @@
-.keyboard-wrapper {
-  max-width: 800px;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-image: url(/assets/img/bg-stars.jpeg);
+  background-repeat: no-repeat;
+  display: grid;
+  background-size: cover;
+  place-content: center;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+body .keyboard_wrapper {
+  width: 835px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(236, 232, 232, 0.5);
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+body .keyboard_wrapper .display-wrapper {
   width: 100%;
-  max-height: 500px;
-  height: 500px;
-  border: 1px solid black;
-  margin: auto;
+  height: 100%;
+}
+
+body .keyboard_wrapper .display-wrapper .display {
+  position: relative;
+  font-size: 18px;
+  font-family: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  border: 2px inset #fff;
+  background-color: #eeecec;
+  white-space: pre-wrap;
+  box-shadow: inset 2px 2px 5px #0002, inset -2px -2px 5px #fff;
+}
+
+body .keyboard_wrapper .display-wrapper input {
+  outline: none;
+}
+
+body .keyboard_wrapper .display-wrapper .display::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(45deg, #ffffff52, #0000001a);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+body .keyboard_wrapper .key {
+  margin-top: 20px;
+  text-transform: lowercase;
+  user-select: none;
+}
+
+body .keyboard_wrapper .key .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+
+body .keyboard_wrapper .key .row span {
+  width: 50px;
+  height: 50px;
   display: grid;
-  grid-template-rows: 10% 30% 50% 10%;
-  font-size: 13px;
-  font-family: "Times New Roman", Times, serif;
+  place-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  background-color: #fff;
 }
 
-.keyboard-wrapper .title {
-  border: 1px solid black;
+body .keyboard_wrapper .key .row span.caps,
+body .keyboard_wrapper .key .row span.backspace {
+  width: calc(50px * 2);
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
-.keyboard-wrapper .screen {
-  border: 1px solid black;
+body .keyboard_wrapper .key .row span.space {
+  width: calc(50px * 9.4);
 }
 
-.keyboard-wrapper .screen .userScreen {
-  width: 99%;
-  height: 96%;
-  font-size: 25px;
-  text-align: right;
-  direction: ltr;
+body .keyboard_wrapper .key .row span.active,
+body .keyboard_wrapper .key .row span:hover {
+  border: 1px solid;
+  border-color: orange;
+  color: #b60e03;
 }
 
-.keyboard-wrapper .keyboard {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  border: 1px solid black;
+body .keyboard_wrapper .key .row span.active,
+body .keyboard_wrapper .key .row span:active {
+  background-color: orange;
 }
 
-.keyboard-wrapper .keyboard .row1 {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(13, 1fr) 2fr;
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row1 .border {
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row2 {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(15, 1fr);
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row2 .border {
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row3 {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 2fr repeat(11, 1fr) 2fr;
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row3 .border {
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row4 {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 2fr repeat(11, 1fr) 2fr;
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row4 .border {
-  border: 1px solid black;
-}
-
-.keyboard-wrapper .keyboard .row5 {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) 7fr repeat(5, 1fr);
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.keyboard-wrapper .keyboard .row5 .border {
-  border: 1px solid black;
-}
-
-.animation {
-  background-color: #ee0909;
+body .keyboard_wrapper .key.uppercase {
+  text-transform: capitalize;
 }
