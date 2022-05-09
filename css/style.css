@@ -43,9 +43,7 @@ body .keyboard_wrapper .display-wrapper .display {
   background-color: #eeecec;
   white-space: pre-wrap;
   box-shadow: inset 2px 2px 5px #0002, inset -2px -2px 5px #fff;
-}
-
-body .keyboard_wrapper .display-wrapper input {
+  resize: none;
   outline: none;
 }
 
@@ -86,6 +84,10 @@ body .keyboard_wrapper .key .row span {
   background-color: #fff;
 }
 
+body .keyboard_wrapper .key .row .enter {
+  width: calc(50px * 2);
+}
+
 body .keyboard_wrapper .key .row span.caps,
 body .keyboard_wrapper .key .row span.backspace {
   width: calc(50px * 2);
@@ -95,7 +97,7 @@ body .keyboard_wrapper .key .row span.backspace {
 }
 
 body .keyboard_wrapper .key .row span.space {
-  width: calc(50px * 9.4);
+  width: calc(50px * 9.8);
 }
 
 body .keyboard_wrapper .key .row span.active,

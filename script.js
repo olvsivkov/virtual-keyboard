@@ -2,7 +2,7 @@
 document.body.insertAdjacentHTML("afterbegin",
     `<div class="keyboard_wrapper">
     <div class="display-wrapper">
-        <input class="display" type="text" autofocus>
+        <textarea class="display" type="text" autofocus></textarea>
     </div>
     <div class="key">
         <div class="row">
@@ -54,6 +54,7 @@ document.body.insertAdjacentHTML("afterbegin",
             <span data-key="l">l</span>
             <span data-key=";">;</span>
             <span data-key="'">'</span>
+            <span class="enter">Enter</span>
         </div>
         <div class="row">
             <span class="shift">Shift</span>
@@ -88,7 +89,11 @@ const keys = document.querySelectorAll('.keyboard_wrapper .key .row span'),
     keyPad = document.querySelector('.keyboard_wrapper .key'),
     display = document.querySelector('.display'),
     letter = document.querySelectorAll("span"),
-    space = document.querySelector(".space")
+    space = document.querySelector(".space"),
+    backspace = document.querySelector(".backspace"),
+    esc = document.querySelector(".esc"),
+    enter = document.querySelector(".enter")
+
 
 let capsLockMode = false;
 keys.forEach(key => {
@@ -101,6 +106,10 @@ keys.forEach(key => {
         } else if (key.classList.contains('backspace')) {
             let str = display.value;
             display.value = str.substring(0, (str.length - 1));
+        } else if (key.classList.contains('esc')) {
+            display.value = ''
+        } else if (key.classList.contains("enter")) {
+            display.value += '\r\n'
         } else {
             if (capsLockMode) {
                 display.value += key.dataset.key.toUpperCase();
@@ -121,7 +130,13 @@ function handler(event) {
     if (event.keyCode == 8) {
         let str = display.innerText;
         display.innerText = str.substring(0, (str.length - 1));
-    } else if (event.key === ' ' || event.key === 'Spacebar') {
+        backspace.classList.add('active')
+        setTimeout(() => { backspace.classList.remove('active') }, 200);
+    } else if (event.keyCode == 27) {
+        display.value = ''
+        esc.classList.add('active')
+        setTimeout(() => { esc.classList.remove('active') }, 200);
+    } else if (event.key === ' ') {
         space.classList.add('active')
         setTimeout(() => { space.classList.remove('active') }, 200);
     } else {
