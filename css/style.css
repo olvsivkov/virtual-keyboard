@@ -6,7 +6,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-image: url(./assets/img/bgstars.jpeg);
+  background-image: url(./bgstars.jpg);
   background-repeat: no-repeat;
   display: grid;
   background-size: cover;
